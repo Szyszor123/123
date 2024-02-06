@@ -1,0 +1,13 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.gallery img {
+    margin: 10px; /* Odstępy między zdjęciami */
+    width: 150px; /* Mniejsza szerokość obrazów */
+    height: auto;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atrakcje Kaszub</title>
+<style>
+/* style.css - Arkusz stylów dla sekcji atrakcji z tekstem obok zdjęć */
+/* style.css - Arkusz stylów dla sekcji atrakcji z symetrycznym układem i ramką tylko wokół obrazów */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #d2b48c; /* beżowe tło */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px; /* Maksymalna szerokość kontenera */
+    margin: 20px auto; /* Centrowanie kontenera */
+    padding: 0 15px; /* Padding dla lekkiego odstępu od krawędzi */
+    box-sizing: border-box; /* Włączenie paddingu do szerokości kontenera */
+}
+
+.attraction {
+    margin-bottom: 20px;
+    background-color: #fff;
+    overflow: hidden; /* Clearfix dla elementów pływających */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Lekki cień dla każdej sekcji */
+}
+
+.attraction-header {
+    color: #333;
+    margin: 20px; /* Jednolite marginesy dla nagłówka */
+}
+
+.attraction img {
+    width: 40%; /* Mniejsze obrazy */
+    float: left; /* Umieszczenie obrazu po lewej stronie tekstu */
+    margin: 20px; /* Odstęp od pozostałych elementów */
+    border: 3px solid #ddd; /* Ramka wokół obrazu */
+}
+
+.attraction-body {
+    float: left; /* Umieszczenie tekstu po lewej stronie (obok obrazu) */
+    width: calc(60% - 40px); /* Szerokość tekstu z odjęciem marginesów */
+    margin: 20px; /* Jednolite marginesy dla tekstu */
+    text-align: justify; /* Wyrównanie tekstu do szerokości */
+}
+
+/* Reset float dla kolejnych sekcji */
+.attraction:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .attraction img,
+    .attraction-body {
+        float: none;
+        width: auto;
+        display: block;
+    }
+
+    .attraction img {
+        margin: 20px auto; /* Centrowanie obrazów na mniejszych urządzeniach */
+    }
+
+    .attraction-body {
+        margin: 0 20px; /* Jednolite marginesy dla tekstu */
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+
+</style>
+</head>
+<body>
+    
+<div class="container">
+  
+  <div class="attraction">
+    <h2 class="attraction-header">Atrakcje Regionu</h2>
+    </div>
+  </div>
+  <!-- Dodaj ten kod w odpowiednim miejscu na Twojej stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Zamek Krzyżacki w Człuchowie</h2>
+  <img src="zamek lot.jpg" alt="Zamek Krzyżacki w Człuchowie widok z lotu ptaka">
+  <div class="attraction-body">
+    <p>Zamek krzyżacki położony w Człuchowie, jest drugim po Malborku największym zamkiem Zakonu. Był najtrudniejszym do zdobycia obiektem na Pomorzu, siedzibą komtura i konwentu krzyżackiego. Rezydował w nim Ulrich von Jungingen i Konrad von Wallenrode. Obecnie w zamku działa Regionalne Muzeum z wystawami stałymi i czasowymi oraz biblioteka. Organizowane tam wydarzenia oraz inscenizacje historyczne cieszą ogromnym powodzeniem śród mieszkańców oraz przyjezdnych Gości. Zamek otacza przepiękny park angielski – Lasek Luizy.</p>
+  </div>
+  <img src="zamek blisko.jpg" alt="Zamek Krzyżacki w Człuchowie">
+</div>
+<!-- Kontynuacja sekcji atrakcji na stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Wyciąg do nart wodnych i wakeboardu w Szczecinku</h2>
+  <img src="wyciag.jpg" alt="Wyciąg do nart wodnych i wakeboardu">
+  <div class="attraction-body">
+    <p>Jeden z najdłuższych wyciągów w Europie położony nad jeziorem Trzesiecko. Usytuowany w centrum miasta w otoczeniu zabytkowego parku miejskiego nasyconego zielenią sprawia, że odwiedzany jest przez narciarzy wodnych oraz wakeboardzistów nie tylko dla sportowych atrakcji, ale również wyjątkowego klimatu miejsca. Park rozciąga się wzdłuż całego jeziora, posiada liczne skwery oraz strefy aktywnego wypoczynku. Dla romantyków oraz fanów róż – ogród różany. Poza wypożyczeniem sprzętu wodnego, miasto oferuje również rowery miejskie.</p>
+  </div>
+</div>
+<!-- Kolejna sekcja atrakcji na stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Zoo Canpol</h2>
+  <div class="attraction-body">
+    <p>Zaszyty w lesie ogród zoologiczny w przygotowanych terenach zgodnych z naturalnym życiem zwierząt o powierzchni 4870 m2. Ogród zamieszkuje 39 gatunków zwierząt, około 100 mieszkańców, a najbardziej cenne gatunki to Tygrys Syberyjski, Hipopotam Karłowaty, Kangur Rudy, Struś Afrykański, Zebra Chapmana. Canpol zaprasza także na Eurobungee, tor kartingowy oraz Paddle Boat – zabawę w wodzie dla najmłodszych.</p>
+  </div>
+  <img src="surykatki.jpg" alt="Surikaty w Zoo Canpol">
+  <img src="tygrys.jpg" alt="Tygrys Syberyjski w Zoo Canpol">
+</div>
+<!-- Następna sekcja atrakcji na stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Park Owadów w Lubnicy</h2>
+  <div class="attraction-body">
+    <p>Czy można schować się pod mrówką? A może by tak przytulić się do pszczoły? Teraz to możliwe. Zapraszamy do jedynego, niepowtarzalnego Parku Owadów w Lubnicy. W Parku można spotkać realistyczne modele owadów, wykonane w gigantycznym powiększeniu. Rzeźby te są wykonane z precyzyjną dokładnością i dbałością o ich budowę morfologiczną. Gigantyczne pozwalają nam na lepsze poznanie budowy tych osobników. Spacer ścieżką edukacyjno – przyrodniczą to znakomity materiał edukacyjny dla każdej grupy wiekowej i wspaniała lekcja biologii. Tylko tu spotkasz gigantyczną muchę, konika polnego czy też pająka. Ekspozycja figur wzbogacona została poprzez wystawę żywych owadów, pochodzących z różnych zakątków naszego globu.</p>
+  </div>
+  <img src="mrowka.jpg" alt="Gigantyczna mrówka w Parku Owadów w Lubnicy">
+  <img src="pajak.jpg" alt="Gigantyczny pająk w Parku Owadów w Lubnicy">
+</div>
+<!-- Kontynuacja opisu innych atrakcji -->
+<!-- Kolejna sekcja atrakcji na stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Rezerwat Przyrody Przytoń</h2>
+  <img src="rzeka.jpg" alt="Rezerwat Przyrody Przytoń">
+  <div class="attraction-body">
+    <p>Jeden z najmłodszych w naszej okolicy krajobrazowych rezerwatów przyrody ale też szczególnie doceniany przez turystów. To tutaj, na powierzchni 20 ha, znajduje się ogromny las przepięknych buków rosnących na skarpie rzeki Brdy. Większość turystów podziwia uroki rezerwatu z poziomu kajaków. Największe walory kryje w sobie górna część lasu - buki oraz sosny, które robią ogromne wrażenie - mają ponad 200 lat. Ogromne pnie drzew, które zamierają nie są zagospodarowane przez człowieka. To właśnie na nich rosną nowe drzewa oraz rozwijają się różnego rodzaju grzyby oraz rozwijają się zwierzęta, które są zależne od rozkładających się roślin. Oprócz walorów przyrodniczych można dostrzec tutaj walory estetyczne, które będą niezapomniane dla osób, które mieszkają w mieście.</p>
+  </div>
+</div>
+<!-- Kontynuacja opisu innych atrakcji -->
+<!-- Dodatkowa sekcja atrakcji na stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Tor Kartingowy Canpol Racing w Człuchowie</h2>
+  <img src="tor.jpg" alt="Tor Kartingowy Canpol Racing">
+  <div class="attraction-body">
+    <p>Tor kartingowy Canpol Racing w Człuchowie to jeden z najnowocześniejszych amatorskich torów kartingowych w Polsce. Mierzący 600 metrów długości tor wyposażony jest w dwusektorowy pomiar czasu rodem z F1, a wyniki wyświetlane są na żywo w trakcie jazdy na imponującej rozmiarami tablicy LED. Profesjonalnie mocowane bandy zapewniają maksimum bezpieczeństwa, otaczająca zieleń cieszy oko podczas jazdy, a sztuczne oświetlenie zapewnia świetną widoczność nawet po zmroku.</p>
+  </div>
+</div>
+<!-- Kontynuacja opisu innych atrakcji -->
+<!-- Kolejna sekcja atrakcji na stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Park Linowy w Człuchowie</h2>
+  <img src="park 1.jpg" alt="Elementy Parku Linowego w Człuchowie">
+  <img src="park 2.jpg" alt="Uczestnicy na trasie w Parku Linowym">
+  <div class="attraction-body">
+    <p>Park Linowy w Człuchowie to doskonała zabawa dla dzieci i dorosłych. Aktywny wypoczynek, przygoda oraz niezły przypływ adrenaliny dostępny dla każdego bez względu na wiek czy sprawność fizyczną. Przełam własne słabości i skorzystaj z naszych atrakcji „w tak pięknych okolicznościach przyrody”. Park linowy składa się z 3 oddzielnych etapów o zróżnicowanym stopniu trudności: trasa dziecięca (16 przeszkód),trasa średnia(19 przeszkód) i trasa trudna (27 przeszkód).</p>
+  </div>
+</div>
+<!-- Kontynuacja opisu innych atrakcji -->
+<!-- Sekcja Parku Wodnego na stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Park Wodny w Człuchowie</h2>
+  <img src="zjezdzalnia.jpg" alt="Zjeżdżalnie w Parku Wodnym w Człuchowie">
+  <img src="słon.jpg" alt="Basen dla dzieci w Parku Wodnym w Człuchowie">
+  <div class="attraction-body">
+    <p>Jest to obiekt odkryty, działający sezonowo. W Parku Wodnym znajdują się zjeżdżalnie, występujące w formie rynny, rury i ślizgawki wielotorowej. Na miejscu znajduje się też basen dla dzieci z małymi zjeżdżalniami (słoniki, zjeżdżalnie wielotorowe – rodzinne) oraz mała rwąca rzeka.</p>
+  </div>
+</div>
+<!-- Kontynuacja opisu innych atrakcji -->
+
+
+
+
+</div>
+</body>
+</html>

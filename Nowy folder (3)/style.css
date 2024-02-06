@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5dc;
+    line-height: 1.6; /* Zwiększenie odstępu między liniami tekstu */
+}
+.language-selection img {
+    width: 20px; /* ustawia szerokość flag */
+    height: 15px; /* ustawia wysokość flag */
+    margin: 0 10px; /* dodaje odstęp między ikonami */
+    vertical-align: middle; /* wyrównuje ikony do środkowej linii tekstu */
+}
+
+/* Możesz również dodać dodatkowe style, aby umieścić flagi dokładnie na środku */
+.language-selection {
+    text-align: center; /* wyrównuje ikony do środka kontenera */
+    position: absolute; /* ustawia pozycjonowanie absolutne */
+    left: 50%; /* przesuwa kontener w połowie szerokości nadrzędnego elementu */
+    transform: translateX(-50%); /* przesuwa kontener w lewo o połowę jego własnej szerokości, aby wyśrodkować */
+    top: 10px; /* ustawia odstęp od górnej krawędzi */
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px; /* Dodanie odstępu wewnątrz kontenera */
+}
+
+header {
+    background-color: #d2b48c;
+    padding: 15px 0; /* Zwiększenie odstępu w nagłówku */
+}
+
+header h1 {
+    margin-bottom: 10px; /* Dodanie odstępu pod tytułem */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px; /* Dodanie odstępu pod nawigacją */
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px; /* Zwiększenie odstępu między elementami nawigacji */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.video-section iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin-bottom: 20px; /* Dodanie odstępu pod sekcją wideo */
+}
+
+.description-section {
+    padding: 20px 0;
+    display: none;
+    text-align: justify;
+}
+
+.description-section p, .description-section ul {
+    margin-bottom: 15px; /* Odstępy między akapitami i listami */
+}
+
+.description-section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+footer {
+    background-color: #d2b48c;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0; /* Zwiększenie odstępu w stopce */
+}
+
+@media (max-width: 768px) {
+    .container, nav ul li {
+        width: 95%;
+        display: block;
+        margin: 10px 0; /* Odstępy dla urządzeń mobilnych */
+    }
+}
+.container{
+    text-align:center ;
+}
+

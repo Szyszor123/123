@@ -1,0 +1,62 @@
+/* style.css - Arkusz stylów dla sekcji atrakcji */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.attraction {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #d2b48c;
+}
+
+.attraction-header {
+    color: #333;
+    margin: 0 0 20px;
+}
+
+.attraction img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.attraction-body p {
+    color: #666;
+    margin: 0;
+}
+
+/* Style dla obrazów - w zależności od liczby obrazów w sekcji, można to dostosować. */
+.attraction img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .attraction img {
+        width: 49%;
+        display: inline-block;
+        margin-right: 2%;
+    }
+
+    .attraction img:last-of-type {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+}

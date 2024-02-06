@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atrakcje Kaszub</title>
+<style>
+/* style.css - Arkusz stylów dla sekcji atrakcji z tekstem obok zdjęć */
+/* style.css - Arkusz stylów dla sekcji atrakcji z symetrycznym układem i ramką tylko wokół obrazów */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #d2b48c; /* beżowe tło */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px; /* Maksymalna szerokość kontenera */
+    margin: 20px auto; /* Centrowanie kontenera */
+    padding: 0 15px; /* Padding dla lekkiego odstępu od krawędzi */
+    box-sizing: border-box; /* Włączenie paddingu do szerokości kontenera */
+}
+
+.attraction {
+    margin-bottom: 20px;
+    background-color: #fff;
+    overflow: hidden; /* Clearfix dla elementów pływających */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Lekki cień dla każdej sekcji */
+}
+
+.attraction-header {
+    color: #333;
+    margin: 20px; /* Jednolite marginesy dla nagłówka */
+}
+
+.attraction img {
+    width: 40%; /* Mniejsze obrazy */
+    float: left; /* Umieszczenie obrazu po lewej stronie tekstu */
+    margin: 20px; /* Odstęp od pozostałych elementów */
+    border: 3px solid #ddd; /* Ramka wokół obrazu */
+}
+
+.attraction-body {
+    float: left; /* Umieszczenie tekstu po lewej stronie (obok obrazu) */
+    width: calc(60% - 40px); /* Szerokość tekstu z odjęciem marginesów */
+    margin: 20px; /* Jednolite marginesy dla tekstu */
+    text-align: justify; /* Wyrównanie tekstu do szerokości */
+}
+
+/* Reset float dla kolejnych sekcji */
+.attraction:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .attraction img,
+    .attraction-body {
+        float: none;
+        width: auto;
+        display: block;
+    }
+
+    .attraction img {
+        margin: 20px auto; /* Centrowanie obrazów na mniejszych urządzeniach */
+    }
+
+    .attraction-body {
+        margin: 0 20px; /* Jednolite marginesy dla tekstu */
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+
+</style>
+</head>
+<body>
+    
+<div class="container">
+  
+  <div class="attraction">
+    <h2 class="attraction-header">Sehenswürdigkeiten der Region</h2>
+    </div>
+  </div>
+  <!-- Dodaj ten kod w odpowiednim miejscu na Twojej stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Deutschordensburg in Człuchów</h2>
+  <img src="zamek lot.jpg" alt="Zamek Krzyżacki w Człuchowie widok z lotu ptaka">
+  <div class="attraction-body">
+    <p>Die Kreuzritterburg in Człuchów ist nach Marienburg die zweitgrößte Burg des Ordens. 
+        Es war das am schwierigsten zu erobernde Objekt in Pommern, der Sitz des Feldherrn und des Kreuzritterklosters. 
+        Dort residierten Ulrich von Jungingen und Konrad von Wallenrode. Derzeit beherbergt das Schloss ein Regionalmuseum mit Dauer- und Wechselausstellungen und einer Bibliothek.
+         Die dort organisierten Veranstaltungen und historischen Aufführungen erfreuen sich bei Bewohnern und Gästen großer Beliebtheit. 
+        Das Schloss ist von einem wunderschönen englischen Park umgeben – dem Luiza-Wald.</p>
+  </div>
+  <img src="zamek blisko.jpg" alt="Zamek Krzyżacki w Człuchowie">
+</div>
+<!-- Kontynuacja sekcji atrakcji na stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Wasserski- und Wakeboardlift in Szczecinek</h2>
+  <img src="wyciag.jpg" alt="Wyciąg do nart wodnych i wakeboardu">
+  <div class="attraction-body">
+    <p>Einer der längsten Skilifte Europas am Trzesiecko-See.
+        Es liegt im Stadtzentrum, umgeben von einem historischen Stadtpark voller Grünflächen
+        dass es von Wasserskifahrern und Wakeboardern nicht nur wegen der Sportattraktionen, sondern auch wegen der einzigartigen Atmosphäre des Ortes besucht wird.
+        Der Park erstreckt sich entlang des gesamten Sees und verfügt über zahlreiche Plätze und aktive Erholungszonen. Für Romantiker und Rosenfans – ein Rosengarten.
+        Neben dem Verleih von Wasserausrüstung bietet die Stadt auch Citybikes an.</p>
+  </div>
+</div>
+<!-- Kolejna sekcja atrakcji na stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Zoo Canpol</h2>
+  <div class="attraction-body">
+    <p>Ein im Wald versteckter Zoo in vorbereiteten Bereichen, die dem natürlichen Leben der Tiere entsprechen, mit einer Fläche von 4.870 m2.
+        Im Garten leben 39 Tierarten, etwa 100 Einwohner, und die wertvollsten Arten sind der Sibirische Tiger, das Zwergflusspferd, das Rote Känguru,
+        Afrikanischer Strauß, Chapman-Zebra. Canpol lädt Sie auch zum Eurobungee ein, einer Go-Kart-Strecke und zum Paddelboot – Wasserspaß für die Kleinsten.</p>
+  <img src="surykatki.jpg" alt="Surikaty w Zoo Canpol">
+  <img src="tygrys.jpg" alt="Tygrys Syberyjski w Zoo Canpol">
+</div>
+</div>
+<!-- Następna sekcja atrakcji na stronie HTML -->
+
+<div class="attraction">
+    <h2 class="attraction-header">Insecten Park in Lubnica</h2>
+    <div class="attraction-body">
+      <p>Kann man sich unter einer Ameise verstecken? Wie wäre es, eine Biene zu umarmen? Jetzt ist es möglich.
+        Wir laden Sie in den einzigen Insektenpark in Lubnica ein. Im Park finden Sie realistische Insektenmodelle in gigantischer Vergrößerung.
+         Diese Skulpturen werden mit präziser Genauigkeit und unter Berücksichtigung ihrer morphologischen Struktur hergestellt. Gigantische Exemplare ermöglichen es uns, die Struktur dieser Individuen besser zu verstehen.
+          Ein Spaziergang entlang des Lehr- und Naturlehrpfades ist ein hervorragendes Lehrmaterial für jede Altersgruppe und eine tolle Biologiestunde. Nur hier triffst du auf eine Riesenfliege,
+           eine Heuschrecke oder eine Spinne. Die Figurenausstellung wurde durch eine Ausstellung lebender Insekten aus verschiedenen Teilen der Welt bereichert.</p>
+    </div>
+    <img src="mrowka.jpg" alt="Gigantyczna mrówka w Parku Owadów w Lubnicy">
+    <img src="pajak.jpg" alt="Gigantyczny pająk w Parku Owadów w Lubnicy">
+  </div>
+  </div>
+
+<div class="attraction">
+  <h2 class="attraction-header">Naturschutzgebiet Przytoń</h2>
+  <img src="rzeka.jpg" alt="Rezerwat Przyrody Przytoń">
+  <div class="attraction-body">
+    <p>Eines der jüngsten Landschaftsschutzgebiete unserer Gegend, aber auch von Touristen besonders geschätzt.
+        Hier wächst auf einer Fläche von 20 ha ein riesiger Wald mit wunderschönen Buchen am Ufer des Flusses Brda.
+        Die meisten Touristen bewundern den Charme des Reservats aus der Höhe der Kajaks. Die größten Werte liegen im oberen Teil des Waldes – Buchen und Kiefern,
+        die einen gewaltigen Eindruck hinterlassen – sie sind über 200 Jahre alt. Riesige absterbende Baumstämme werden von Menschen nicht bewirtschaftet.
+         Auf ihnen wachsen neue Bäume, es entwickeln sich verschiedene Pilzarten und es entwickeln sich Tiere, die auf verrottende Pflanzen angewiesen sind.
+          Neben den natürlichen Werten können Sie hier auch ästhetische Werte sehen, die für die Menschen, die in der Stadt leben, unvergesslich sein werden.</p>
+  </div>
+</div>
+<!-- Kontynuacja opisu innych atrakcji -->
+<!-- Dodatkowa sekcja atrakcji na stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Kartbahn Canpol Racing in Człuchów</h2>
+  <img src="tor.jpg" alt="Tor Kartingowy Canpol Racing">
+  <div class="attraction-body">
+    <p>Die Kartbahn Canpol Racing in Człuchów ist eine der modernsten Amateur-Kartbahnen in Polen.
+        Die 600 Meter lange Strecke ist mit einer Zwei-Sektoren-Zeitmessung im F1-Stil ausgestattet und die Ergebnisse werden während der Fahrt live auf einer beeindruckend großen LED-Tafel angezeigt.
+         Fachmännisch installierte Absperrungen sorgen für maximale Sicherheit, die umliegende Begrünung erfreut das Auge während der Fahrt und künstliche Beleuchtung sorgt für hohe Sicherheit
+          Sichtbarkeit auch nach Einbruch der Dunkelheit.</p>
+  </div>
+</div>
+<!-- Kontynuacja opisu innych atrakcji -->
+<!-- Kolejna sekcja atrakcji na stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Seilpark in Człuchów</h2>
+  <img src="park 1.jpg" alt="Elementy Parku Linowego w Człuchowie">
+  <img src="park 2.jpg" alt="Uczestnicy na trasie w Parku Linowym">
+  <div class="attraction-body">
+    <p>Der Seilpark in Człuchów ist ein großer Spaß für Kinder und Erwachsene.
+        Aktive Erholung, Abenteuer und ein toller Adrenalinstoß für jeden, unabhängig von Alter oder körperlicher Fitness.
+         Überwinden Sie Ihre Schwächen und nutzen Sie unsere Attraktionen „in solch wunderschöner Natur“. Der Seilpark besteht aus 3 separaten Bühnen mit unterschiedlichen Schwierigkeitsgraden
+         Schwierigkeitsgrad: Kinderroute (16 Hindernisse), mittlere Route (19 Hindernisse) und schwierige Route (27 Hindernisse).</p>
+  </div>
+</div>
+<!-- Kontynuacja opisu innych atrakcji -->
+<!-- Sekcja Parku Wodnego na stronie HTML -->
+
+<div class="attraction">
+  <h2 class="attraction-header">Wasserarche in Człuchów</h2>
+  <img src="zjezdzalnia.jpg" alt="Zjeżdżalnie w Parku Wodnym w Człuchowie">
+  <img src="słon.jpg" alt="Basen dla dzieci w Parku Wodnym w Człuchowie">
+  <div class="attraction-body">
+    <p>Es handelt sich um eine Außenanlage, die saisonal geöffnet ist. Der Wasserpark verfügt über Rutschen,
+        Erhältlich in Form einer Rinnen-, Rohr- und Mehrspurrutsche. Es gibt auch ein Kinderbecken mit kleinen Rutschen
+         (Elefanten, Mehrspurrutschen - Familie) und ein kleiner rauschender Fluss.</p>
+  </div>
+</div>
+<!-- Kontynuacja opisu innych atrakcji -->
+
+
+
+
+</div>
+</body>
+</html>

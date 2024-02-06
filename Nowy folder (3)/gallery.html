@@ -1,0 +1,192 @@
+<html>
+
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f5f5dc; /* Zmieniono na jaśniejszy kolor dla spójności z index.html */
+        }
+        
+        /* Styl dla każdej galerii, ustawiając rozmiar i margines */
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: calc(33.333% - 10px); /* Zmiana szerokości, aby trzy obrazy zmieściły się w jednym rzędzie */
+            box-sizing: border-box; /* Uwzględnia border i padding w szerokości */
+        }
+        .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5dc; /* Tło galerii - zmień kolor wg uznania */
+    padding: 5px; /* Dla odstępu wokół całej galerii */
+}
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    flex-basis: calc(33.333% - 10px); /* Zajmuje 1/3 szerokości kontenera minus marginesy */
+    box-sizing: border-box;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px; /* Zmniejszono rozmiar czcionki dla opisu */
+}
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+        
+        div.gallery img {
+            width: 100%;
+            height: auto;
+            display: block; /* Usunięcie domyślnego marginesu dla obrazów */
+        }
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            font-size: 20px; /* Zmniejszenie rozmiaru czcionki opisu */
+        }
+        
+        /* Dodatkowe style dla spójności z index.html */
+        header, footer {
+            background-color: #d2b48c;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        /* Styl dla nagłówka */
+        header h1 {
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+        
+        /* Clearfix dla float elementów */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        @media (max-width: 768px) {
+            div.gallery {
+                width: calc(50% - 10px); /* Zmniejszenie ilości obrazów w rzędzie dla mniejszych ekranów */
+            }
+        }
+        </style>
+        
+</head>
+
+<body>
+
+    <div class="gallery">
+        <a target="_blank" href="IMG_6377.jpg">
+            <img src="IMG_6377.jpg" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="IMG_6378.jpg">
+            <img src="IMG_6378.jpg" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="IMG_6379.JPG">
+            <img src="IMG_6379.JPG" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="IMG_6380.JPG">
+            <img src="IMG_6380.JPG" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="IMG_6381.JPG">
+            <img src="IMG_6381.JPG" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="IMG_6382.JPG">
+            <img src="IMG_6382.JPG" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="IMG_6384.JPG">
+            <img src="IMG_6384.JPG" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="IMG_6385.JPG">
+            <img src="IMG_6385.JPG" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>           
+    <div class="gallery">
+        <a target="_blank" href="IMG_6387.JPG">
+            <img src="IMG_6387.JPG" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>       
+    <div class="gallery">
+        <a target="_blank" href="IMG_6387.JPG">
+            <img src="IMG_6387.JPG" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="IMG_6388.JPG">
+            <img src="IMG_6388.JPG" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="IMG_6389.JPG">
+            <img src="IMG_6389.JPG" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="IMG_6390.JPG">
+            <img src="IMG_6390.JPG" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="IMG_6391.JPG">
+            <img src="IMG_6391.JPG" alt="Domek" width="1000" height="400">
+        </a>
+        <div class="desc">Kliknij aby zobaczyć pełne zdjęcie!</div>
+    </div>
+
+</body>
+
+</html>
